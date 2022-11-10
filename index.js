@@ -50,6 +50,7 @@ async function run() {
             const query = {};
             const cursor = reviewsCollection.find(query);
             const reviews = await cursor.toArray();
+            console.log(reviews);
             res.send(reviews);
         })
 
